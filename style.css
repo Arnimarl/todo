@@ -1,0 +1,40 @@
+/* start commented backslash hack \*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+ }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.todo_app {
+    margin-top: 100px;
+}
+.todo_app #todos {
+    max-width: 500px;
+}
+.todo_app ol {
+    padding: 0;
+}
+.todo_app ol li {
+    cursor: pointer;
+    line-height: 34px;
+    padding: 2px;
+}
+.todo_app ol li .btn-danger {
+    float: right;
+    opacity: 0;
+    transition: .2s;
+}
+.todo_app ol li:hover {
+    background-color: #E0EAF1;
+}
+.todo_app ol li:hover .btn {
+    opacity: 1;
+}
+
